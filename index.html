@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SOP 2 By Sanaullah</title>
+    <style>
+        p{
+            line-height: 30px;
+        }
+        .Output{
+            font-size: 18px;
+            font-weight: 600;
+            color: #265df2;
+        }
+        .div{
+            border: 2px solid black;
+        }
+        iframe{
+            height:800px;
+            width: 480px;
+            border: none;
+        }
+        .div{
+            text-align: center;
+        }
+        .text-boxes{
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            padding: 0 30px;
+        }
+        .text-boxes .text-box{
+            height: 380px;
+            max-width: 660px;
+            width: 100%;
+            margin: 55px 0;
+        }
+        .text-boxes .text-box .topic{
+            font-size: 18px;
+            font-weight: 600;
+            color: #265df2;
+            margin: 4px;
+        }
+        .text-boxes .text-box textarea{
+            height: 100%;
+            width: 100%;
+            padding: 30px;
+            font-size: 15px;
+            font-weight: 400;
+            outline: none;
+            border: 1px solid #265df2;
+            border-radius: 8px;
+            background: #cad5f3;
+        }
+        .text-box textarea::-webkit-scrollbar{
+            display: none;
+        }
+        .text-boxes .text-box button{
+            height: 45px;
+            width: 155px;
+            color: #fff;
+            background: #265df2;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 400px;
+            cursor: pointer;
+            margin: 8px 0;
+            transition: all 0.4s ease;
+         }
+         a{
+             text-decoration: none;
+             color: white;
+         }
+    </style>
+</head>
+<body>
+    <p>
+    <span style="color: rgb(24, 190, 245);">SOP 2 : Create a web page with, following specification.<br></span>
+    <span style="color: red">&#9679;</span>Image of any scientist with an alternate text as his name.<br>
+    <span style="color: red">&#9679;</span>Create a paragraph related to information of that scientist.<br>
+    <span style="color: red">&#9679;</span>Create a table of his/her inventions.<br>
+    <br>
+    </p>
+    <span class="Output">Output:</span><br><br>
+    <div class="div"><iframe src="OUTPUT/s2.html" scrolling="no"></iframe></div>
+    <div class="text-boxes">
+        <div class="text-box">
+            <div class="topic">Code:</div>
+            <textarea id="HTMLBox" readonly> 
+                <!DOCTYPE html>
+<head>
+    <title>Sop 1,2</title>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/A._P._J._Abdul_Kalam.jpg/220px-A._P._J._Abdul_Kalam.jpg" alt="A.P.J.Abdul Kalam">
+    <p>
+    Avul Pakir Jainulabdeen Abdul Kalam 15 October 1931
+     – 27 July 2015) was an Indian aerospace scientist who
+      served as the 11th president of India from 2002 to 
+      2007. He was born and raised in Rameswaram, Tamil 
+      Nadu and studied physics and aerospace engineering. 
+      He spent the next four decades as a scientist and 
+      science administrator, mainly at the Defence Research
+       and Development Organisation (DRDO) and Indian Space
+        Research Organisation (ISRO) and was intimately 
+        involved in India's civilian space programme and 
+        military missile development efforts. He thus came 
+        to be known as the Missile Man of India for his 
+        work on the development of ballistic missile and 
+        launch vehicle technology. He also played a pivotal 
+        organisational, technical, and political role in 
+        India's Pokhran-II nuclear tests in 1998, the first 
+        since the original nuclear test by India in 1974.</p>
+<p>
+Kalam was elected as the 11th president of India in 2002 with the support of both the ruling Bharatiya Janata Party and the then-opposition Indian National Congress. Widely referred to as the "People's President", he returned to his civili an life of education, writing and public service after a single term. He was a recipient of several prestigious awards, including the Bharat Ratna, India's highest civilian honour.</p>
+<table border="3">
+    <tr>
+        <th>Sr. No.</th>
+        <th>Name of the Invention</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>Agni</th>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>Prithvi</th>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>Pokhran-II</th>
+    </tr>
+</table>
+</body>
+</html>
+            </textarea><br>
+            <button id="HTMLButton">Copy Code</button><br>
+            <button class="btn" style="width: 17%"><a href="Sop 1.html"><i class="fa">&#xf053 </i>Sop 1</a></button>
+            <button class="btn" style="width: 17%; margin-left: 22%;"><a href="Sop.html"><i class="fa fa-home"> </i>Home</a></button>
+            <button class="btn" style="width: 17%; margin-left: 25%;"><a href="Sop 3.html">Sop 3<i class="fa">&#xf054 </i></a></button>
+        </div>
+    </div>
+
+    <script>
+
+        let HTMLBox = document.getElementById("HTMLBox");
+        let HTMLButton = document.getElementById("HTMLButton");
+
+        HTMLButton.onclick = function(){
+            HTMLBox.select();
+            document.execCommand("copy");
+            HTMLButton.innerText = "Codes Copied"
+        }
+    </script>
+
+</body>
+</html>
